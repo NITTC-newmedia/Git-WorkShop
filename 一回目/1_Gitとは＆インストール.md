@@ -22,17 +22,21 @@
 3. いろいろ聞かれるが、何も変更せずに「Next」をクリックしていく。
 
 4. コマンドプロンプト(以降cmdと表記)を開き、次のコードを実行。
+
 ```cmd
 > git --version
 ```
+
 Gitのバージョンが出力されたらインストール成功。
 ***
 
 ## Mac
 Macにはデフォルトで既に入っているらしいので次のコマンドで確認｡
+
 ```bash
 $ git --version # バージョン確認
 ```
+
 Gitのバージョンが出力されたら使える状態｡
 
 ### ※インストールされてない場合(非常用)
@@ -41,6 +45,7 @@ Gitのバージョンが出力されたら使える状態｡
 
 ## Linux
 次のコマンドで一発。
+
 ```bash
 $ sudo apt install git -y
 $ git --version # バージョン確認
@@ -56,14 +61,18 @@ $ git --version # バージョン確認
 $ git config --global user.name "Your name" # ユーザー名を入力する
 $ git config --global user.email "Your mail address" # メールアドレスを入力する
 ```
+
 設定する時は、ユーザー名とメアドはきちんと"(ダブルクオーテーション)で囲んでください。
 ## デフォルトのブランチ名変更
 デフォルトではブランチ名がmasterになっているためmainに変更(変更しなくても問題はないが、今はmainという名がGitHubのデフォルトブランチ名にもなってたりして主流。合わせておくのが無難。)
+
 ```bash
 $ git config --global init.defaultBranch main # defaultBranchをmainにする
 ```
+
 ## 設定確認
 次のコマンドで設定確認
+
 ```bash
 $ git config -l
 ...
@@ -71,6 +80,7 @@ user.name=Your_name
 user.email=Your_mail_address
 init.defaultBranch=main
 ```
+
 設定を替えたいときは[初期設定と同じ手順](#ユーザー名とメールアドレスの設定)で
 
 
