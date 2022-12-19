@@ -64,7 +64,7 @@ $ git config --global user.email "Your mail address" # メールアドレスを�
 
 設定する時は、ユーザー名とメアドはきちんと"(ダブルクオーテーション)で囲んでください。
 ## デフォルトのブランチ名変更
-デフォルトではブランチ名がmasterになっているためmainに変更(変更しなくても問題はないが、今はmainという名がGitHubのデフォルトブランチ名にもなってたりして主流。合わせておくのが無難。)
+デフォルトではブランチ名が```master```になっているため```main```に変更(変更しなくても問題はないが、今はmainという名がGitHubのデフォルトブランチ名にもなってたりして主流。合わせておくのが無難。)
 
 ```bash
 $ git config --global init.defaultBranch main # defaultBranchをmainにする
